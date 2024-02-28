@@ -9,24 +9,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        shape: {
-          100: '#F5F6FA',
+        white: {
+          100: '#fff',
         },
-        input: {
-          200: '#F4F5F7',
-          300: '#3D3F47',
+        mygreen: {
+          200: '#5F8D4E',
+          800: '#285430',
         },
-        main: {
-          500: '#0A76DE',
-          100: 'hsba(209, 95%, 87%, 0.07)'
+        black: {
+          500: '#181C32',
+        }, 
+        mygray: {
+          100: '#FAFAFA',
+          500: '#C9C9C9',
         } 
       },
       textColor: {
-        main: {
-          500: '#0A76DE',
+        mygreen: {
+          800: '#285430',
         },
-        input: {
-          200: '#E8E8E9',
+        white: {
+          100: '#fff',
         }
       }
     },

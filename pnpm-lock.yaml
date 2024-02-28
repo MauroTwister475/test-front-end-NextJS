@@ -14,6 +14,12 @@ dependencies:
   '@radix-ui/themes':
     specifier: ^2.0.3
     version: 2.0.3(@types/react-dom@18.2.19)(@types/react@18.2.60)(react-dom@18.2.0)(react@18.2.0)
+  lucide:
+    specifier: ^0.341.0
+    version: 0.341.0
+  lucide-react:
+    specifier: ^0.341.0
+    version: 0.341.0(react@18.2.0)
   next:
     specifier: 14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -23,6 +29,9 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
+  tailwind-merge:
+    specifier: ^2.2.1
+    version: 2.2.1
 
 devDependencies:
   '@types/node':
@@ -3021,6 +3030,18 @@ packages:
       yallist: 4.0.0
     dev: true
 
+  /lucide-react@0.341.0(react@18.2.0):
+    resolution: {integrity: sha512-fqI0TLU/VbzC3p90MHP3kdCRRUMTRT5qBfxwaXlllkZieYfRrMVd/RORXytqJUC2GBrvZdWYs6yvJIrqdsOmDQ==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /lucide@0.341.0:
+    resolution: {integrity: sha512-snDHqSmXhshGV5XG2yYVKg3e9fs4WK+cCrbpRMAa03dc0FVye2elupkRnURZYNSAYUO4fuiOHf3+i3yqtM7dmA==}
+    dev: false
+
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -3827,6 +3848,12 @@ packages:
 
   /tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
+    dev: false
+
+  /tailwind-merge@2.2.1:
+    resolution: {integrity: sha512-o+2GTLkthfa5YUt4JxPfzMIpQzZ3adD1vLVkvKE1Twl9UAhGsEbIZhHHZVRttyW177S8PDJI3bTQNaebyofK3Q==}
+    dependencies:
+      '@babel/runtime': 7.23.9
     dev: false
 
   /tailwindcss@3.4.1:
