@@ -5,3 +5,16 @@
 
 @layer utilities {
 }
+/* Bg */
+
+/* position: absolute;
+width: 173px;
+height: 60px;
+left: 165px;
+top: 12px;
+
+background: #FFFFFF; */
+
+html, body {
+  overflow-x: hidden;
+}

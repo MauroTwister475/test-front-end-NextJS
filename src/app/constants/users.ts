@@ -13,58 +13,58 @@ export const usersDB: IUser[] = [
       hour: "03:00 PM"
     },
     designation: "Doctor",
-    status: "Accepted",
+    status: "Approved",
   },
   {
     id: "002",
-    name: "Afonso Vicente",
+    name: "Mauro Twister",
     avatar: "",
-    email: "afonso@gmail.com",
-    phone_number: "945332002",
+    email: "twister@gmail.com",
+    phone_number: "945551192",
     date_added: {
-      day: "12/12/2022",
+      day: "12/12/2023",
       hour: "03:00 PM"
     },
     designation: "Especialist",
-    status: "Denied",
+    status: "Declined",
   },
   {
     id: "003",
-    name: "Afonso Vicente",
+    name: "Java Simon",
     avatar: "",
-    email: "afonso@gmail.com",
+    email: "java@gmail.com",
     phone_number: "945332002",
     date_added: {
       day: "12/12/2022",
       hour: "03:00 PM"
     },
     designation: "teste",
-    status: "Accepted",
+    status: "Approved",
   },
   {
-    id: "004",
-    name: "Afonso Vicente",
+    id: "04",
+    name: "Miguel Deep",
     avatar: "",
-    email: "afonso@gmail.com",
+    email: "deep@gmail.com",
     phone_number: "945332002",
     date_added: {
       day: "12/12/2022",
       hour: "03:00 PM"
     },
     designation: "Teste1",
-    status: "Denied",
+    status: "Declined",
   },
   {
     id: "005",
-    name: "Afonso Vicente",
+    name: "Abílio Félix",
     avatar: "",
-    email: "afonso@gmail.com",
+    email: "abfline@gmail.com",
     phone_number: "945332002",
     date_added: {
       day: "12/12/2022",
       hour: "03:00 PM"
     },
     designation: "",
-    status: "Accepted",
+    status: "Approved",
   },
 ]

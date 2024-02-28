@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 type Link = {
   href: string,
   text: string,
@@ -11,19 +9,19 @@ export const NAVBAR_LINKS: Link[] = [
     text: "Users", 
   },
   { 
-    href: "/categories",
+    href: "/patients",
     text: "Patients",
   },
   { 
-    href: "/schedules",
+    href: "/hospitals",
     text: "Hospitals",
   },
   { 
-    href: "/see_schedules",
+    href: "/notices",
     text: "Notices",
   },
   { 
-    href: "/settings",
+    href: "/help_center",
     text: "Help center",
   },
 ];

@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import { MantineProvider } from '@mantine/core';
+import { QueryClientProvider } from "@/app/Providers/QueryClientProvider";
 import '@mantine/core/styles.css';
 import "./globals.css";
-import { Header } from "@/app/components/Header";
 
 const poppins = Poppins({
   weight: "400",
@@ -27,10 +27,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`antialiased h-screen bg-mygray-100  ${poppins.className}`}>
-        <MantineProvider>
-          <Header />
-          {children}
-        </MantineProvider>
+        <QueryClientProvider>
+          <MantineProvider>
+            {children}
+          </MantineProvider>
+        </QueryClientProvider>
       </body>
     </html>
   );

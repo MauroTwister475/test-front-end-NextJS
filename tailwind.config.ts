@@ -13,11 +13,15 @@ const config: Config = {
           100: '#fff',
         },
         mygreen: {
+          100: '#F4FFF3',
           200: '#5F8D4E',
           800: '#285430',
         },
         black: {
           500: '#181C32',
+        }, 
+        myzinc: {
+          800: '##464E5F',
         }, 
         mygray: {
           100: '#FAFAFA',

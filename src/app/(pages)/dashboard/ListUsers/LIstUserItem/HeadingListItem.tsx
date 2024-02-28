@@ -5,6 +5,6 @@ interface HeadingListItemProps {
 }
 export function HeadingListItem({ children }: HeadingListItemProps) {
   return (
-    <h3 className="text-sm">{children}</h3>
+    <h3 className="text-[14px] text-myzinc-800 font-[600px]">{children}</h3>
   )
 }

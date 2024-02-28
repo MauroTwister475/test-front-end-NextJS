@@ -10,5 +10,5 @@ export type IUser = {
     hour: string,
   },
   designation: string,
-  status: "Accepted" | "Denied",
+  status: "Approved" | "Declined",
 }

@@ -1,109 +1,36 @@
+"use client"
+import { Table } from '@mantine/core';
 
+const elements = [
+  { position: 6, mass: 12.011, symbol: 'C', name: 'Carbon' },
+  { position: 7, mass: 14.007, symbol: 'N', name: 'Nitrogen' },
+  { position: 39, mass: 88.906, symbol: 'Y', name: 'Yttrium' },
+  { position: 56, mass: 137.33, symbol: 'Ba', name: 'Barium' },
+  { position: 58, mass: 140.12, symbol: 'Ce', name: 'Cerium' },
+];
 
-export default function PAge() {
+export default function Demo() {
+  const rows = elements.map((element) => (
+    <Table.Tr key={element.name} className='border-none outline-none '>
+      <Table.Td>{element.position}</Table.Td>
+      <Table.Td>{element.name}</Table.Td>
+      <Table.Td>{element.symbol}</Table.Td>
+      <Table.Td>{element.mass}</Table.Td>
+    </Table.Tr>
+  ));
+
   return (
-    <table className="w-full text-sm  mt-36 font-medium border-collapse border border-gray-400 bg-white">
-      <thead className="text-xs uppercase">
-        <tr className="border border-gray-400">
-          <th scope="col" className="px-6 py-3 text-start border border-gray-400">
-            Nome
-          </th>
-          <th scope="col" className="px-6 py-3 text-start border border-gray-400">
-            ID
-          </th>
-          <th scope="col" className="px-6 py-3 text-start border border-gray-400">
-            Email
-          </th>
-          <th scope="col" className="px-6 py-3 text-start border border-gray-400">
-            phone number
-          </th>
-          <th scope="col" className="px-6 py-3 text-start border border-gray-400">
-            Date added
-          </th>
-          <th scope="col" className="px-6 py-3 text-start border border-gray-400">
-            STATUS
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr className="border border-gray-400">
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-        </tr>
-        <tr className="border border-gray-400">
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-        </tr>
-        <tr className="border border-gray-400">
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-        </tr>
-        <tr className="border border-gray-400">
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-          <td className="px-2 py-4 text-start border border-gray-400">
-            afonso da silva
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  )
+    <Table stickyHeader stickyHeaderOffset={60} className='mt-56 border-none outline-none '>
+      <Table.Thead>
+        <Table.Tr className='border-none outline-none '>
+          <Table.Th>Element position</Table.Th>
+          <Table.Th>Element name</Table.Th>
+          <Table.Th>Symbol</Table.Th>
+          <Table.Th>Atomic mass</Table.Th>
+        </Table.Tr>
+      </Table.Thead>
+      <Table.Tbody>{rows}</Table.Tbody>
+      <Table.Caption>Scroll page to see sticky thead</Table.Caption>
+    </Table>
+  );
 }

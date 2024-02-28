@@ -1,63 +1,72 @@
+import { DatePickerInput } from '@mantine/dates';
 import { Form } from "@/app/components/Form"
 import { InputGroup } from "@/app/components/InputGroup"
-import { Select, TextInput } from "@mantine/core"
+import { CalendarDays } from 'lucide-react';
+
+import { DateInput } from '@mantine/dates';
+
+function Demo() {
+            
+            return ;
+}
+
 export function FormAddNewDoctor() {
   return (
-    <form className="w-full flex flex-col gap-2 px-4 pt-12 pb-2">
+    <form className="w-full flex flex-col gap-2 px-4 pt-12 pb-2 ">
       <h2 className="font-semibold text-md">Basic Information</h2>
-      <div className="w-full h-full">
+      <div className="w-full h-full flex flex-col gap-[18px]">
         <InputGroup>
-          <Select
-            className="w-full"
-            label="User Type"
-            placeholder="Select user type"
-            data={["admin", "user"]}
-          />
-          <Select
-            className="w-full  focus:border-red-800"
+          <Form.Select
+            id="user"
+            label="Select your user type"
+            placeholder="Your user type"
+          >
+            <option value="admin"></option>
+            <option value="user"></option>
+          </Form.Select>
+          <Form.Select
+            id="user"
             label="Gender"
-            placeholder="Select gender"
-            data={["male", "female"]}
-          />
+            placeholder="Your gender"
+          >
+            <option value="Macho"></option>
+            <option value="Female"></option>
+          </Form.Select>
         </InputGroup>
         <InputGroup>
-          <TextInput
-            className="w-full border-red-400"
-            label="First Name"
+          <Form.Input
             type="text"
+            label="First Name"
             placeholder="Your first name"
           />
-          <TextInput
-            className="w-full"
+          <Form.Input
             type="text"
             label="Designation"
             placeholder="Your designation"
           />
         </InputGroup>
         <InputGroup>
-          <TextInput
-            className="w-full"
-            label="Last Name"
+          <Form.Input
             type="text"
-            placeholder="Your Last name"
+            label="Last Name"
+            placeholder="Your last name"
           />
-          <Select
-            className="w-full"
-            type="date"
+          <DatePickerInput
+            className='w-full focus:border focus:border-red-400'
+            rightSection={<CalendarDays className='text-black' />}
             label="Date of birth"
-            placeholder="Your birth date"
+            placeholder="Select your day of Birth"
           />
         </InputGroup>
         <InputGroup className="flex w-[50%]">
-          <TextInput
-            className="w-full"
+          <Form.Input
             type="email"
             label="Email address"
             placeholder="Your email address"
           />
         </InputGroup>
         <div className="w-full mt-6 flex items-end">
-          <Form.Button className="w-max ml-auto text-white-100 hover:bg-green-600 transition-colors">
+          <Form.Button className="w-max ml-auto border-none text-white-100 hover:bg-mygreen-800 transition-colors">
             Next Step
           </Form.Button>
         </div>
@@ -65,3 +74,5 @@ export function FormAddNewDoctor() {
     </form>
   )
 }
+
+
