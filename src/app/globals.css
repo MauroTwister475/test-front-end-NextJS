@@ -18,3 +18,7 @@ background: #FFFFFF; */
 html, body {
   overflow-x: hidden;
 }
+
+.inputDate {
+  border: 1px solid #5F8D4E,
+}

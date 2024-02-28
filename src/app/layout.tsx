@@ -5,6 +5,7 @@ import { MantineProvider } from '@mantine/core';
 import { QueryClientProvider } from "@/app/Providers/QueryClientProvider";
 import '@mantine/core/styles.css';
 import "./globals.css";
+import { theme } from './mantineTheme';
 
 const poppins = Poppins({
   weight: "400",
@@ -28,7 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body className={`antialiased h-screen bg-mygray-100  ${poppins.className}`}>
         <QueryClientProvider>
-          <MantineProvider>
+          <MantineProvider theme={theme}>
             {children}
           </MantineProvider>
         </QueryClientProvider>

@@ -1,16 +1,21 @@
+"use client"
 import { DatePickerInput } from '@mantine/dates';
 import { Form } from "@/app/components/Form"
 import { InputGroup } from "@/app/components/InputGroup"
 import { CalendarDays } from 'lucide-react';
-
-import { DateInput } from '@mantine/dates';
-
-function Demo() {
-            
-            return ;
-}
+import { useState } from 'react';
 
 export function FormAddNewDoctor() {
+  const [isFocused, setIsFocused] = useState(false);
+
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+
+  const handleBlur = () => {
+    setIsFocused(false);
+  };
+
   return (
     <form className="w-full flex flex-col gap-2 px-4 pt-12 pb-2 ">
       <h2 className="font-semibold text-md">Basic Information</h2>
@@ -52,10 +57,15 @@ export function FormAddNewDoctor() {
             placeholder="Your last name"
           />
           <DatePickerInput
-            className='w-full focus:border focus:border-red-400'
+            className={`w-full`}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
             rightSection={<CalendarDays className='text-black' />}
             label="Date of birth"
             placeholder="Select your day of Birth"
+            classNames={{
+              input: "inputDate",
+            }}
           />
         </InputGroup>
         <InputGroup className="flex w-[50%]">
@@ -75,4 +85,7 @@ export function FormAddNewDoctor() {
   )
 }
 
+/*
+
+*/
 

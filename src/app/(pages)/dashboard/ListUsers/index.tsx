@@ -1,6 +1,6 @@
 "use client"
 import { useQuery } from "@tanstack/react-query"
-import { Table } from "@mantine/core"
+import { Container, Table } from "@mantine/core"
 import { headingItems } from "@/app/constants/Headings"
 import { UsersListSkeleton } from "@/app/components/Skeletons/UsersListSkeleton"
 import { api } from "@/app/api"
@@ -10,7 +10,6 @@ import { ListUserItem } from "./LIstUserItem"
 
 
 export function ListUsers() {
-
   const { data: users, isLoading } = useQuery({
     queryKey: ['users'],
     queryFn: async () => {
@@ -22,6 +21,7 @@ export function ListUsers() {
   return (
     <div className="mx-auto mt-52 p-10 rounded-lg bg-white-100 w-[88.6%] pb-16" suppressHydrationWarning={true}>
       <ListHeader />
+
       <Table verticalSpacing={15} className='w-full outline-none mt-6'>
         <Table.Thead className="bg-mygray-100 rounded-[.6rem] text-gray-400 h-[4rem]">
           <Table.Tr className='border-none outline-none'>
