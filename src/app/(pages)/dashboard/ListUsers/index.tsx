@@ -8,7 +8,6 @@ import { IUser } from "@/app/@types/Types"
 import { ListHeader } from "./ListHeader"
 import { ListUserItem } from "./LIstUserItem"
 
-
 export function ListUsers() {
   const { data: users, isLoading } = useQuery({
     queryKey: ['users'],
