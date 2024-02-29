@@ -7,7 +7,6 @@ interface SelectProps {
   placeholder: string,
 }
 export function Select({ label, id, placeholder, children }: SelectProps) {
-  console.log(id)
   return (
     <div className='w-full'>
       <label 
