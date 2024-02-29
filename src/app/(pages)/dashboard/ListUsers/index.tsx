@@ -12,7 +12,7 @@ export function ListUsers() {
         <Table.Thead className="bg-mygray-100 rounded-[.6rem] text-gray-400 h-[4rem]">
           <Table.Tr className='border-none outline-none'>
             {headingItems.map((item) => (
-              <Table.Th className={`${item.text === "Name" && "pl-5"} text-[12px] text-myzinc-800`} key={item.text}>
+              <Table.Th className={`${item.text === "Name" && "pl-5 rounded-s-[.6rem]"} ${item.text === "STATUS" && "pl-5 rounded-e-[.6rem]"} text-[13px] text-myzinc-8000 `} key={item.text}>
                 {item.text}
               </Table.Th>
             ))}
