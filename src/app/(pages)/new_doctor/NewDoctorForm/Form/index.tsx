@@ -17,7 +17,7 @@ export function FormAddNewDoctor() {
           </Form.Select>
           <Form.Select
             id="gender"
-            label="Gender"
+            label="Gender f"
             placeholder="Your gender"
           >
             <option value="Man"></option>

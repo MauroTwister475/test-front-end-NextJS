@@ -3,9 +3,10 @@ import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import { MantineProvider } from '@mantine/core';
 import { QueryClientProvider } from "@/app/Providers/QueryClientProvider";
+import { theme } from './mantineTheme';
+import { Header } from "./components/Header";
 import '@mantine/core/styles.css';
 import "./globals.css";
-import { theme } from './mantineTheme';
 
 const poppins = Poppins({
   weight: "400",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={`antialiased h-screen bg-mygray-100  ${poppins.className}`}>
         <QueryClientProvider>
           <MantineProvider theme={theme}>
+            <Header />
             {children}
           </MantineProvider>
         </QueryClientProvider>

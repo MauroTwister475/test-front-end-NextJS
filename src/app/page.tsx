@@ -1,11 +1,7 @@
-import Link from "next/link";
+import Dashboard from "./(pages)/dashboard/page";
 
 export default function Home() {
   return (
-    <Link href="/dashboard" 
-      className="w-max flex self-center m-auto px-4 py-2 bg-mygreen-200 mt-20 hover:bg-mygreen-800 transition-colors rounded-md text-white-100"
-    >
-      Start test
-    </Link>
+    <Dashboard />
   )
 }
