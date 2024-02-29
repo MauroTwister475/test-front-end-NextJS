@@ -1,5 +1,5 @@
 "use client";
-import { createTheme } from "@mantine/core";
+import { createTheme, Button, ActionIcon } from "@mantine/core";
 import { DatePickerInput } from "@mantine/dates";
 
 export const theme = createTheme({
@@ -17,6 +17,26 @@ export const theme = createTheme({
           outline: 'none',
           borderColor: '#5F8D4E',
         },
+      },
+    }),
+    Button: Button.extend({
+      classNames: {
+        root:'datePicker',
+        label:'my-label-class',
+      },
+      styles: {
+        root: { 
+         },
+      },
+    }) ,
+    ActionIcon: ActionIcon.extend({
+      classNames: {
+        root:'datePicker',
+      },
+      styles: {
+        root: { 
+          background: '#F4FFF3',
+         },
       },
     }) 
   },

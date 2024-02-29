@@ -1,18 +1,10 @@
 "use client"
-import { useQuery } from "@tanstack/react-query"
-import { Container, Table } from "@mantine/core"
+import { Table } from "@mantine/core"
 import { headingItems } from "@/app/constants/Headings"
-import { UsersListSkeleton } from "@/app/components/Skeletons/UsersListSkeleton"
-import { api } from "@/app/api"
-import { IUser } from "@/app/@types/Types"
 import { ListHeader } from "./ListHeader"
-import { ListUserItem } from "./LIstUserItem"
-import { Suspense } from "react"
 import Users from "./users"
 
 export function ListUsers() {
-  
-
   return (
     <div className="mx-auto mt-52 p-10 rounded-lg bg-white-100 w-[88.6%] pb-16 mb-96" suppressHydrationWarning={false}>
       <ListHeader />
@@ -27,9 +19,7 @@ export function ListUsers() {
           </Table.Tr>
         </Table.Thead>
         <Table.Tbody>
-          
-            <Users />
-          {/* </Suspense> */}
+          <Users />
         </Table.Tbody>
       </Table>
     </div>

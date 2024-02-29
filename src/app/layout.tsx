@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import { MantineProvider } from '@mantine/core';
-import { QueryClientProvider } from "@/app/Providers/QueryClientProvider";
 import '@mantine/core/styles.css';
 import "./globals.css";
 import { theme } from './mantineTheme';
@@ -28,11 +27,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`antialiased h-screen bg-mygray-100  ${poppins.className}`}>
-        <QueryClientProvider>
-          <MantineProvider theme={theme}>
-            {children}
-          </MantineProvider>
-        </QueryClientProvider>
+        <MantineProvider theme={theme}>
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );

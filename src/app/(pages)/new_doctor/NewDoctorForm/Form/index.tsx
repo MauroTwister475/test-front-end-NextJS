@@ -2,7 +2,6 @@ import { Form } from "@/app/components/Form"
 import { InputGroup } from "@/app/components/InputGroup"
 
 export function FormAddNewDoctor() {
-
   return (
     <form className="w-full flex flex-col gap-2 px-4 pt-12 pb-2 ">
       <h2 className="font-semibold text-md">Basic Information</h2>
