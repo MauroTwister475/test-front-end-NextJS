@@ -12,6 +12,7 @@
     "@mantine/core": "^7.6.1",
     "@mantine/dates": "^7.6.1",
     "@mantine/hooks": "^7.6.1",
+    "@tanstack/react-query": "^5.24.1",
     "@types/axios": "^0.14.0",
     "@types/json-server": "^0.14.7",
     "axios": "^1.6.7",

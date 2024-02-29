@@ -1,11 +1,18 @@
-import { api } from "@/app/api";
+"use client";
+import { Suspense } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { ListUserItem } from "./LIstUserItem";
 import { IUser } from "@/app/@types/Types";
-import { Suspense } from "react";
+import { api } from "@/app/api";
 
-export default async function Users() {
-  const res = await api.get<IUser[]>("/users");
-  const users = res.data;
+export default function Users() {
+  const { data: users } = useQuery({
+    queryKey: ['users'],
+    queryFn: async () => {
+      const users = await api.get<IUser[]>("/users");
+      return users.data;
+    }
+  });
 
   return (
     <Suspense fallback={<p>Carregando...</p>}>
