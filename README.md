@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Gmail Clone 
 
-First, run the development server:
+### Este repositório contém o projecto `Clínica`. Um teste front-end com nextjs que fui imposto a fazer. Para mais informações sobre o projecto, clique <a href="https://github.com/MauroTwister475/test-front-end-NextJS">aqui</a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## Imagens após a conclusão do projecto
+
+   <div style="display:flex; flex-wrap: wrap; gap: 10px; margin-top: 50px;">
+     <img src="./assets/1.png" width="300" heigth="100">
+     <img src="./assets/2.png" width="300" heigth="100"> 
+     <img src="./assets/3.png" width="300" heigth="100"> 
+   </div>
+
+## Técnologias Utilizadas 📌🚀 
+  - [React Native](https://reactnative.dev/)
+  - [Expo](https://docs.expo.dev/)
+  - [Nativewind](https://nativewind.dev/)
+
+## Requisitos para rodar o projecto:
+
+### Setup de ambiente: 
+- Node versão - <a href="https://nodejs.org/dist/v20.11.1/node-v20.11.1-x64.msi">LTS</a> >= 20
+- npm (Gerenciador de pacotes que foi utilizado no projecto)
+
+## Como rodar o projeto?👩‍💻🚩
+
+1 - Clone o repositório
+
+```
+git clone https://github.com/MauroTwister475/test-front-end-NextJS.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2 - Rode o seguinte comando para instalar todas as dependências necessárias: 
+```
+npm install ou npx expo install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3 -  E por fim, rode o seguinte comando:
+```
+npm start ou npx expo start
+```
+## Ver mais sobre mim 🔗🌎
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Minhas Redes
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Github: https://github.com/MauroTwister475/profile
+- Linkedin: https://www.linkedin.com/in/mauro-raimundo-dinis-00475526a/
