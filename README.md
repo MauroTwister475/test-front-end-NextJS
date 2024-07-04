@@ -6,10 +6,9 @@
 
 ## Imagens após a conclusão do projecto
 
-   <div style="display:flex; flex-wrap: wrap; gap: 10px; margin-top: 50px;">
-     <img src="./assets/1.png" width="300" heigth="100">
-     <img src="./assets/2.png" width="300" heigth="100"> 
-     <img src="./assets/3.png" width="300" heigth="100"> 
+   <div style="display:flex; flex-direction: col; flex-wrap: wrap; gap: 10px; margin-top: 50px;">
+     <img src="./src/app/assets/2.jpg" width="800" heigth="800"> 
+     <img src="./src/app/assets/3.png" width="800" heigth="800"> 
    </div>
 
 ## Técnologias Utilizadas 📌🚀 
