@@ -1,7 +1,7 @@
 
-# Gmail Clone 
+# Clínica SMAD 
 
-### Este repositório contém o projecto `Clínica`. Um teste front-end com nextjs que fui imposto a fazer. Para mais informações sobre o projecto, clique <a href="https://github.com/MauroTwister475/test-front-end-NextJS">aqui</a>
+### Este repositório contém o projecto `Clínica SMAD`. Um teste front-end com nextjs que fui imposto a fazer. Para mais informações sobre o projecto, clique <a href="https://github.com/MauroTwister475/test-front-end-NextJS">aqui</a>
 
 
 ## Imagens após a conclusão do projecto
